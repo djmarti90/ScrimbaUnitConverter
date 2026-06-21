@@ -19,29 +19,6 @@ body {
     box-sizing: border-box;
 }
 
-button {
-    margin-top: 20px;
-    background-color: white;
-    padding: 12px 24px;
-    border: none;
-    border-radius: 7px;
-    font-size: 14px;
-    font-family: "Inter", sans-serif;
-    color: #3D3D3D;
-    font-weight: bold;
-
-    transition: transform 0.1s ease, background-color 0.2s ease;
-}
-
-button:hover {
-    background-color: #f0f4f8;
-    filter: brightness(0.95);
-}
-
-button:active {
-    transform: scale(0.95); /* Button drückt sich leicht zusammen */
-}
-
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {

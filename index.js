@@ -3,16 +3,19 @@
 1 liter = 0.264 gallon
 1 kilogram = 2.204 pound
 */
-
-const convertButton = document.getElementById('convertButton');
 const inputNumber = document.getElementById('inputNumber');
 
 const lengthOutput = document.getElementById('lengthOutput');
 const volumeOutput = document.getElementById('volumeOutput');
 const massOutput = document.getElementById('massOutput');
 
-convertButton.addEventListener('click', (e) => {
+inputNumber.addEventListener('input', () => {
     const inputValue = Number(inputNumber.value)
+
+    if (inputValue === 0) {
+        inputNumber.value = ''
+        inputNumber.textContent = ''
+    }
 
     const metersToFeet = (inputValue * 3.281).toFixed(3);
     const feetToMeters = (inputValue / 3.281).toFixed(3);
